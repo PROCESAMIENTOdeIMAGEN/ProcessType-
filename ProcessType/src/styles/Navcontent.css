@@ -227,3 +227,175 @@ input[type="file"]{
     margin-right: 10px;
     font-size: 16px;
   }
+
+  /* Submenus */
+  /* Estilos generales para submenus */
+  .sub-menus{
+    box-sizing: border-box;
+    margin-top: 10vh;
+    position: fixed;
+    margin-left: 60px;
+    z-index: 12;
+    width: 240px;
+    height: 90vh;
+    background-color: #242631;
+    border-right:1px solid #43465e;
+    padding-top: 20px;
+    padding-left: 14px;
+    transform: translateX(0px);
+    transition: all 0.2s ease;
+   /* overflow-y: scroll;*/
+    
+}
+.sub-menus.despliceX{
+    transition: all 0.6s ease;
+    transform: translateX(-240px);
+}
+.sub-menus.despliceX.despliceXpos{
+    transition: all 0.6s ease;
+    transform: translateX(2px);
+}
+.sub-menus.inactive{
+    visibility: hidden;
+}
+/*.sub-menus::-webkit-scrollbar{
+    width: 6px;
+    height: 8px;
+}
+.sub-menus::-webkit-scrollbar-track{
+    background-color: rgb(45, 45, 70);
+}
+.sub-menus::-webkit-scrollbar-thumb{
+    background-color: rgb(232, 232, 251);
+}*/
+
+/* Estilos de los div de las opciones */
+.op1-1{
+    display: flex;
+    justify-content: center;
+    flex-flow:wrap;
+    align-items: center;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    background-color: #2E313F;
+    color: #9a9fcd;
+    border-radius:5px ;
+    font-size: 13px;
+    overflow: hidden;
+    margin-top: 5px;
+    transition: all 0.2s ease-out;
+}
+#tri,#ari{
+    margin-top: 10px;
+}
+/* Estilos de las opciones */
+.op1-1 .fa-angle-down{
+    background-color: #21232c;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+.op1-1.expand {
+    cursor:context-menu;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    background-color: #21232c;
+    overflow: hidden;
+    transition: all 0.7s ease-out;
+
+}
+.sub-sub{ 
+    padding-top: 0px;
+    text-align: center;
+    visibility:hidden;
+    
+    margin-top: 30px;
+    width: 180px;
+    height:auto;
+    padding-bottom: 10px;
+}
+.sub-sub p{
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #2A2C3B;
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    cursor: pointer;
+    
+
+
+}
+.op1-1.expand .sub-sub{
+    visibility: visible;
+}
+.op1-1.expand .fa-angle-up{
+    background-color: #2E313F;
+    border-radius: 50%;
+    padding: 5px;
+    
+
+}
+.op1-1.expand .iex{
+   visibility: hidden;
+}
+.op1-1.expand .iexU{
+    visibility: visible;
+ }
+.iex{
+    position:absolute;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    margin-left: 160px;
+}
+.iexU{
+    visibility: hidden;
+    position: absolute;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    margin-left: 160px;
+}
+/* trap estilos de los indicadores de parametros */
+.op1-trap{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 160px;
+    background-color: #0ad4c3;
+}
+.op1-trap2{
+    position: absolute;
+    
+    margin-top: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 40px;
+    background-color: #0ad4c3;
+}
+.op1-trap3{
+    position: absolute;
+    
+    margin-top: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 14px;
+    background-color: #0ad4c3;
+}
+.op1-trap4{
+    position: absolute;
+    
+    margin-top: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 34px;
+    background-color: #0ad4c3;
+}
